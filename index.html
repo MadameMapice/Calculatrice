@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Para lengua occidental en web -->
+    <title>calculatrice</title>
+    <link rel="stylesheet" href="index.css" /> <!-- para vincular al css -->
+</head>
+<body>
+    <table class="calculatrice"> <!-- .class para editar en css un elemento especificamente -->
+
+        <tr> <!-- Fila -->
+            <td colspan="4"> <!-- celda y columna -->
+            <span id="resultat"></span> <!-- para hacer recuadro -->
+            </td>
+        </tr>
+        
+        <tr>
+            <td><button id="sept"onclick="calculatrice(7)">7</button></td>
+            <td><button id="huit"onclick="calculatrice(8)">8</button></td>
+            <td><button id="neuf"onclick="calculatrice(9)">9</button></td>
+            <td><button id="division"onclick="calculatrice('/')">/</button></td>
+        </tr>
+
+        <tr>
+            <td><button id="quatre"onclick="calculatrice(4)">4</button></td>
+            <td><button id="cinq"onclick="calculatrice(5)">5</button></td>
+            <td><button id="six"onclick="calculatrice(6)">6</button></td>
+            <td><button id="multiplicacion"onclick="calculatrice('*')">*</button></td>
+        </tr>
+
+        <tr>
+            <td><button id="un" onclick="calculatrice(1)">1</button></td>
+            <td><button id="deux"onclick="calculatrice(2)">2</button></td>
+            <td><button id="trois"onclick="calculatrice(3)">3</button></td>
+            <td><button id="moins"onclick="calculatrice('-')">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button id="effacer"onclick="calculatrice('c')">c</button></td>
+            <td><button id="cero"onclick="calculatrice(0)">0</button></td>
+            <td><button id="egal"onclick="calculatrice('=')">=</button></td>
+            <td><button id="plus"onclick="calculatrice('+')">+</button></td>
+        </tr>
+
+    </table>
+
+    <script src="index.js"></script> <!-- para vincular al JS -->
+
+</body>
+</html>
